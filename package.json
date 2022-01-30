@@ -1,0 +1,12 @@
+{
+  "name": "bytebank",
+  "version": "2.0.0",
+  "description": "Projeto do bytebank segunda etapa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre",
+  "license": "ISC",
+  "type": "module"
+}
