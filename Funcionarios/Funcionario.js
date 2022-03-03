@@ -1,10 +1,18 @@
-export class Funcionario{
+export class Funcionario {
+  constructor(nome, salario, cpf) {
+    this._nome = nome;
+    this._salario = salario;
+    this.cpf = cpf;
 
-    constructor(nome, salario, cpf){
-        this._nome = nome;
-        this._salario = salario;
-        this.cpf = cpf;
+    this._bonificacao = 1;
+    this._senha;
+  }
 
-        this._bonificacao = 1;
-    }
+  get senha(){
+      return this._senha;
+  }
+
+  CadastrarSenha(senha) {
+      this._senha = senha;
+  }
 }

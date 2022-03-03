@@ -1,9 +1,13 @@
 import { Funcionario } from "./Funcionario.js";
 
-export class Gerente extends Funcionario{
+export class Gerente extends Funcionario {
+  constructor(nome, salario, cpf) {
+    super(nome, salario, cpf);
+    this._bonificacao = 1.1;
+    this._senha;
+  }
 
-    constructor(nome, salario, cpf) {
-        super(nome, salario, cpf)
-        this._bonificacao = 1.1;
-    }
+  CadastrarSenha(senha) {
+    this._senha = senha;
+  }
 }
