@@ -9,6 +9,14 @@ diretor.CadastrarSenha("1234567");
 const gerente = new Gerente("Fábio", 5000, 37893512312);
 gerente.CadastrarSenha("123");
 
-const estaLogado = SistemaAutenticacao.Login(diretor, "1234567");
+const cliente = new Cliente("Laís", 12345678910, "456");
 
-console.log(estaLogado);
+const diretorEstaLogado = SistemaAutenticacao.Login(diretor, "1234567");
+const gerenteEstaLogado = SistemaAutenticacao.Login(gerente, "123");
+
+
+console.log("Diretor: " + diretorEstaLogado);
+console.log("Gerente: " + gerenteEstaLogado);
+console.log("Cliente: " + clienteEstaLogado);
+
+const clienteEstaLogado = SistemaAutenticacao.Login(cliente, "456");

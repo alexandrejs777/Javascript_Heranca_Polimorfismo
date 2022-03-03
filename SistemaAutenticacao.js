@@ -1,5 +1,9 @@
+/*
+    Ser autenticável significa ter o método "autenticar"
+*/
+
 export class SistemaAutenticacao{
-    static Login(funcionario, senha){
-        return funcionario.senha == senha;
+    static Login(autenticavel, senha){
+        return autenticavel.Autenticar(senha);
     }
 }

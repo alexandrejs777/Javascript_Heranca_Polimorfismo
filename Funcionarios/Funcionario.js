@@ -8,9 +8,9 @@ export class Funcionario {
     this._senha;
   }
 
-  get senha(){
-      return this._senha;
-  }
+Autenticar(senha){
+    return senha == this._senha;
+}
 
   CadastrarSenha(senha) {
       this._senha = senha;
