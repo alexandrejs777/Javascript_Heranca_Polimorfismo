@@ -27,11 +27,6 @@ export class Conta {
     return this._saldo;
   }
 
-  depositar(valor) {
-    if (valor <= 0) return;
-    this._saldo += valor;
-  }
-
   // Método abstrato. Não é feito pra ser instanciado, mas tem que ser sempre sobrescrito.
   sacar(valor) {
     throw new Error("O método Sacar da classe Conta, é um método abstrato.");
@@ -45,6 +40,11 @@ export class Conta {
     }
 
     return 0;
+  }
+
+  depositar(valor) {
+    if (valor <= 0) return;
+    this._saldo += valor;
   }
 
   transferir(valor, conta) {
